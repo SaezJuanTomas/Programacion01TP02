@@ -183,21 +183,21 @@ public class Main {
         } while (opcion != 24);
         sc.close();
     }
-    public static int sumarNumeros(int n) {
+    private static int sumarNumeros(int n) {
         if (n == 1) {
             return 1;
         } else {
             return n + sumarNumeros(n - 1);
         }
     }
-    public static int sumarDigitos(int n) {
+    private static int sumarDigitos(int n) {
         if (n == 0) {
             return 0;
         } else {
             return n % 10 + sumarDigitos(n / 10);
         }
     }
-    public static String invertirCadena(String cadena) {
+    private static String invertirCadena(String cadena) {
         if (cadena.isEmpty()) {
             return cadena;
         } else {
