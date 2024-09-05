@@ -1,3 +1,4 @@
+import java.util.Date;
 import java.util.Scanner;
 
 public class Main {
@@ -132,16 +133,28 @@ public class Main {
 
                     break;
                 case 15:
-
+                    Integer numero = null;
+                    if (numero == null) {
+                        System.out.println("La variable 'numero' es null.");
+                    } else {
+                        System.out.println("El valor de 'numero' es: " + numero);
+                    }
+                    numero = 42;
+                    System.out.println("Nuevo valor de 'numero': " + numero);
                     break;
                 case 16:
-
+                    System.out.print("Ingrese Double: ");
+                    Double objetoDouble = sc.nextDouble()
+                    double primitivoDouble = objetoDouble;
+                    System.out.println("Valor de primitivo double: " + primitivoDouble);
                     break;
                 case 17:
 
                     break;
                 case 18:
-
+                    Date fechaActual = new Date();
+                    String fechaComoCadena = FuncionesPrograma.getFechaString(fechaActual);
+                    System.out.println("La fecha actual es: " + fechaComoCadena);
                     break;
                 case 19:
 
@@ -203,6 +216,10 @@ public class Main {
         } else {
             return invertirCadena(cadena.substring(1)) + cadena.charAt(0);
         }
+    }
+    private static String getFechaString(Date fecha) {
+        SimpleDateFormat formatoFecha = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+        return formatoFecha.format(fecha);
     }
 }
 
