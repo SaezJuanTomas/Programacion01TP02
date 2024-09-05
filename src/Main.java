@@ -169,6 +169,7 @@ public class Main {
                     String operacion = sc.next();
                     System.out.println(op.aplicarOperacion(operacion));
                 case 20:
+
                     break;
                 case 21:
                     System.out.println("Ingrese un número entero mayor a cero: ");
