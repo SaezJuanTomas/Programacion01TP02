@@ -150,7 +150,7 @@ public class Main {
                     System.out.println("Valor de primitivo double: " + primitivoDouble);
                     break;
                 case 17:
-
+                    System.out.println("Ingrese Long: ");
                     break;
                 case 18:
                     Date fechaActual = new Date();
