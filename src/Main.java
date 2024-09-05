@@ -158,10 +158,10 @@ public class Main {
                     System.out.println("La fecha actual es: " + fechaComoCadena);
                     break;
                 case 19:
-
+                    System.out.println("Ingrese Long: ");
                     break;
                 case 20:
-
+                    System.out.println("Ingrese Long: ");
                     break;
                 case 21:
                     System.out.println("Ingrese un número entero mayor a cero: ");
