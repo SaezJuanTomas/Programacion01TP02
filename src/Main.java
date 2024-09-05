@@ -158,10 +158,20 @@ public class Main {
                     System.out.println("La fecha actual es: " + fechaComoCadena);
                     break;
                 case 19:
-
+                    System.out.println("Ingrese double: ");
+                    double d = sc.nextDouble();
                     break;
                 case 20:
-
+                    OperacionMatematica op = new OperacionMatematica();
+                    System.out.println("Ingrese valor 1: ");
+                    double valor1 = sc.nextDouble();
+                    op.setValor1(valor1);
+                    System.out.println("Ingrese valor 2: ");
+                    double valor2 = sc.nextDouble();
+                    op.setValor2(valor2);
+                    System.out.println("Ingrese + - * /");
+                    String operacion = sc.next();
+                    System.out.println(op.aplicarOperacion(operacion));
                     break;
                 case 21:
                     System.out.println("Ingrese un número entero mayor a cero: ");
