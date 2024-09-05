@@ -1,5 +1,6 @@
 import java.util.Date;
 import java.util.Scanner;
+import java.text.SimpleDateFormat;
 
 public class Main {
     public static void main(String[] args) {
@@ -144,7 +145,7 @@ public class Main {
                     break;
                 case 16:
                     System.out.print("Ingrese Double: ");
-                    Double objetoDouble = sc.nextDouble()
+                    Double objetoDouble = sc.nextDouble();
                     double primitivoDouble = objetoDouble;
                     System.out.println("Valor de primitivo double: " + primitivoDouble);
                     break;
@@ -153,7 +154,7 @@ public class Main {
                     break;
                 case 18:
                     Date fechaActual = new Date();
-                    String fechaComoCadena = FuncionesPrograma.getFechaString(fechaActual);
+                    String fechaComoCadena = Main.getFechaString(fechaActual);
                     System.out.println("La fecha actual es: " + fechaComoCadena);
                     break;
                 case 19:
